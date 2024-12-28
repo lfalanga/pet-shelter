@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import "dotenv/config";
 import swaggerUI from "swagger-ui-express";
 import swaggerJSdoc from "swagger-jsdoc";
 
@@ -7,6 +8,8 @@ import petRoutes from "./pets/routes/pets.routes.js";
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+console.log(process.env);
 
 // swagger definition
 const swaggerSpec = {
