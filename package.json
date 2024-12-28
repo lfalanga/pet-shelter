@@ -19,7 +19,6 @@
     "node",
     "express",
     "supertest",
-    "react",
     "swagger"
   ],
   "author": "Leandro Falanga",
