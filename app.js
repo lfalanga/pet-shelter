@@ -1,6 +1,6 @@
+import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import "dotenv/config";
 import swaggerUI from "swagger-ui-express";
 import swaggerJSdoc from "swagger-jsdoc";
 
@@ -8,8 +8,6 @@ import petRoutes from "./pets/routes/pets.routes.js";
 
 const app = express();
 const port = process.env.PORT || 3000;
-
-console.log(process.env);
 
 // swagger definition
 const swaggerSpec = {
@@ -21,7 +19,7 @@ const swaggerSpec = {
     },
     servers: [
       {
-        url: `http://localhost:${port}`,
+        url: `${process.env.APP_URL}:${port}`,
       },
     ],
   },
@@ -43,7 +41,7 @@ app.use("/pets", petRoutes);
 /* Server setup */
 if (process.env.NODE_ENV !== "test") {
   app.listen(port, () =>
-    console.log(`⚡️[server]: Server is running at http://localhost:${port}`)
+    console.log(`⚡️[server]: Server is running at ${process.env.APP_URL}:${port}`)
   );
 }
 
