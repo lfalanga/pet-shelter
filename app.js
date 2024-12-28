@@ -6,7 +6,7 @@ import swaggerJSdoc from "swagger-jsdoc";
 import petRoutes from "./pets/routes/pets.routes.js";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // swagger definition
 const swaggerSpec = {
