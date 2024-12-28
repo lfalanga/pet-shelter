@@ -1,11 +1,13 @@
-# React + Vite
+# pet-shelter: Node + Express + Supertest + Swagger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This template provides an arquitecture to develop a fake API REST.
 
 # Resources
-https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/
+
+- [article](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+- [node](https://nodejs.org/en)
+- [express](https://expressjs.com/)
+- [supertest](https://www.npmjs.com/package/supertest)
+- [swagger](https://swagger.io/)
+- [corepack](https://nodejs.org/api/corepack.html)
+- [yarn](https://classic.yarnpkg.com/en/)
